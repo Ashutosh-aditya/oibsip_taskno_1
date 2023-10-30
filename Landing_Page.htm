@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Landing Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        transition: background-color 0.5s, color 0.5s;
+    }
+    .hero {
+        background-image: url('your-background-image.jpg');
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        padding: 100px 0;
+    }
+    .hero h1 {
+        font-size: 3rem;
+    }
+    .hero p {
+        font-size: 1.5rem;
+    }
+    .features {
+        padding: 50px 0;
+    }
+    .feature {
+        text-align: center;
+        padding: 20px;
+        transition: transform 0.2s, box-shadow 0.2s;
+        box-shadow: 0 0 0 transparent;
+    }
+    .feature i {
+        font-size: 2rem;
+        color: #007bff;
+    }
+    .feature h2 {
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+    .feature:hover {
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(173, 216, 230, 0.5);
+    }
+    .dark-mode {
+        background-color: #292929;
+        color: #fff;
+    }
+    .dark-mode-toggle {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+    .dark-mode-toggle input[type="checkbox"] {
+        display: none;
+    }
+    .dark-mode-toggle label {
+        cursor: pointer;
+        width: 50px;
+        height: 24px;
+        background-color: #ccc;
+        border-radius: 30px;
+        position: relative;
+        transition: background-color 0.3s;
+    }
+    .dark-mode-toggle label::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        transition: transform 0.3s, background-color 0.3s;
+    }
+    .dark-mode-toggle input:checked + label {
+        background-color: #292929;
+    }
+    .dark-mode-toggle input:checked + label::before {
+        transform: translateX(26px);
+        background-color: grey;
+    }
+    </style>
+</head>
+<body>
+    <div class="dark-mode-toggle">
+    <input type="checkbox" id="dark-mode-toggle-switch">
+    <label for="dark-mode-toggle-switch"></label>
+    </div>
+
+    <section class="hero">
+    <div class="container">
+        <h1>Welcome to Our Beautiful Landing Page</h1>
+        <p>Discover Amazing Features</p>
+        <a href="#features" class="btn btn-primary btn-lg">Learn More</a>
+    </div>
+    </section>
+
+    <section id="features" class="features">
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-4 feature">
+            <i class="fa fa-heart"></i>
+            <h2>Beautiful Design</h2>
+            <p>We create stunning designs that capture your audience's attention.</p>
+        </div>
+        <div class="col-lg-4 feature">
+            <i class="fa fa-cogs"></i>
+            <h2>Easy to Customize</h2>
+            <p>Templates are designed with you in mind. Easily customize to suit your needs.</p>
+        </div>
+        <div class="col-lg-4 feature">
+            <i class="fa fa-mobile"></i>
+            <h2>Responsive</h2>
+            <p>Our pages look great on all devices, from desktops to mobile phones.</p>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="about" class="about">
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-12">
+            <h2>About This Project</h2>
+            <p>This impressive landing page project is a solo task assigned to me. I have had the opportunity to design and develop this page, showcasing my skills in HTML and CSS. It has been a valuable learning experience where I've been able to apply my creativity to make the page visually appealing. The alignments, padding, color palette, and other design elements have been carefully crafted. I've paid close attention to ensure that the elements on the page do not overlap, creating a seamless and engaging user experience. This project allows me to demonstrate my web development abilities and attention to detail.</p>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <footer>
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-12"><br>
+            <h3>Contact Us</h3>
+            <p>If you have any questions, feel free to contact us through our social media channels:</p>
+            <ul class="list-unstyled">
+            <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+            <li><a href="https://www.twitter.com/" target="_blank">Twitter</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    </footer>
+    
+    <script>
+    const darkModeToggle = document.getElementById("dark-mode-toggle-switch");
+    darkModeToggle.addEventListener("change", () => {
+        if (darkModeToggle.checked) {
+        document.body.classList.add("dark-mode");
+        } else {
+        document.body.classList.remove("dark-mode");
+        }
+    });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
