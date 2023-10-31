@@ -2,7 +2,7 @@
 # Beautiful Landing Page
 
 This is a beautiful landing page created with HTML, CSS, and JavaScript.
-
+[Deployed Webpage](https://your-website-url.com)
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -28,6 +28,8 @@ Templates are designed with you in mind. Easily customize to suit your needs.
 ### Responsive
 
 Our pages look great on all devices, from desktops to mobile phones.
+![landing_page](https://github.com/Ashutosh-aditya/oibsip_taskno_1/assets/78680582/802e0186-b8d7-40f3-a2bf-eace04aeeb06)
+![landing_page1](https://github.com/Ashutosh-aditya/oibsip_taskno_1/assets/78680582/079e3472-aba3-4255-a08b-a4e543a4b5bf)
 
 ## About This Project
 
@@ -49,3 +51,5 @@ You can toggle dark mode using the switch provided.
   <input type="checkbox" id="dark-mode-toggle-switch">
   <label for "dark-mode-toggle-switch"></label>
 </div>
+```
+You can view a demo on : [Deployed Webpage](https://ashutosh-aditya.github.io/oibsip_taskno_1/)
